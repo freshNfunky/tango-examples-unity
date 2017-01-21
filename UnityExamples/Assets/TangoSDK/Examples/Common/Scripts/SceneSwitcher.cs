@@ -42,7 +42,11 @@ public class SceneSwitcher : MonoBehaviour
         "AreaLearning",
         "AreaDescriptionManagement",
         "SimpleAugmentedReality",
-        "PointToPoint"
+        "PointToPoint",
+		"ExperimentalFloorFinding",
+		"ExperimentalMeshBuilderWithColor",
+		"ExperimentalMeshBuilderWithPhysics",
+		"ExperimentalMeshOcclusion"
     };
 
     /// <summary>

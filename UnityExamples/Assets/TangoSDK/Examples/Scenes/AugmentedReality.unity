@@ -267,10 +267,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11488288, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: m_enableOcclusion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2034540, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: m_HDR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11469732, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11469732, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
+      propertyPath: m_enableEnvironmentalLighting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11469732, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
+      propertyPath: m_enableDebugUI
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

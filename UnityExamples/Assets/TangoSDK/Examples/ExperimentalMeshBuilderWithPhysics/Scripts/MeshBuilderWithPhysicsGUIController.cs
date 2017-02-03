@@ -69,20 +69,20 @@ public class MeshBuilderWithPhysicsGUIController : MonoBehaviour
     public void OnGUI()
     {
         GUI.color = Color.white;
-        if (GUI.Button(new Rect(Screen.width - 160, 20, 140, 80), "<size=30>Clear</size>"))
+        if (GUI.Button(new Rect(10, 80, 140, 80), "<size=30>Clear</size>"))
         {
             m_dynamicMesh.Clear();
             m_tangoApplication.Tango3DRClear();
         }
         
         string text = m_isEnabled ? "Pause" : "Resume";
-        if (GUI.Button(new Rect(Screen.width - 160, 120, 140, 80), "<size=30>" + text + "</size>"))
+        if (GUI.Button(new Rect(10, 180, 140, 80), "<size=30>" + text + "</size>"))
         {
             m_isEnabled = !m_isEnabled;
             m_tangoApplication.Set3DReconstructionEnabled(m_isEnabled);
         }
 
-        if (GUI.Button(new Rect(Screen.width - 160, 220, 140, 80), "<size=30>Export</size>"))
+        if (GUI.Button(new Rect(10, 280, 140, 80), "<size=30>Export</size>"))
         {
             string filepath = "/sdcard/DemoMesh.obj";
             m_dynamicMesh.ExportMeshToObj(filepath);

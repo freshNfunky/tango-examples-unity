@@ -547,7 +547,7 @@ public class TangoDynamicMesh : MonoBehaviour, ITango3DReconstruction
                 meshRenderer.shadowCastingMode = m_meshRenderer.shadowCastingMode;
                 meshRenderer.receiveShadows = m_meshRenderer.receiveShadows;
                 meshRenderer.sharedMaterials = m_meshRenderer.sharedMaterials;
-                meshRenderer.useLightProbes = m_meshRenderer.useLightProbes;
+				meshRenderer.lightProbeUsage = m_meshRenderer.lightProbeUsage;
                 meshRenderer.reflectionProbeUsage = m_meshRenderer.reflectionProbeUsage;
                 meshRenderer.probeAnchor = m_meshRenderer.probeAnchor;
                 #elif UNITY_4_6

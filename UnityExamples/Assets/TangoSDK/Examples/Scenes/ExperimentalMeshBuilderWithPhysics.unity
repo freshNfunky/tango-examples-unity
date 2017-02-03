@@ -169,6 +169,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &126823554 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
+  m_PrefabInternal: {fileID: 1095517608}
+--- !u!114 &126823555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126823554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a937bd1bbfc2448478faf962cad1592f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_enableUXLibrary: 1
+  m_drawDefaultUXExceptions: 1
+  m_showConnectionScreen: 1
+  m_holdPosture: 0
+--- !u!114 &126823556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126823554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51549b4778944861a78b99341a9c5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_autoConnectToService: 1
+  m_allowOutOfDateTangoAPI: 0
+  m_showPerformanceOptionsInInspector: 1
+  m_showEmulationOptionsInInspector: 1
+  m_emulationEnvironment: {fileID: 0}
+  m_emulationEnvironmentTexture: {fileID: 0}
+  m_doSlowEmulation: 1
+  m_emulationVideoOverlaySimpleLighting: 1
+  m_emulatedAreaDescriptionStartOffset: {x: 0, y: 0, z: 0}
+  m_enableMotionTracking: 1
+  m_motionTrackingAutoReset: 1
+  m_enableAreaDescriptions: 0
+  m_areaDescriptionLearningMode: 0
+  m_enableDriftCorrection: 0
+  m_enableDepth: 1
+  m_enableAreaLearning: 0
+  m_enableADFLoading: 0
+  m_enable3DReconstruction: 1
+  m_3drResolutionMeters: 0.05
+  m_3drGenerateColor: 1
+  m_3drGenerateNormal: 1
+  m_3drGenerateTexCoord: 1
+  m_3drSpaceClearing: 0
+  m_3drUseAreaDescriptionPose: 0
+  m_3drMinNumVertices: 5
+  m_3drUpdateMethod: 1
+  m_enableVideoOverlay: 1
+  m_videoOverlayUseTextureMethod: 1
+  m_videoOverlayUseYUVTextureIdMethod: 0
+  m_videoOverlayUseByteBufferMethod: 1
+  m_keepScreenAwake: 0
+  m_adjustScreenResolution: 0
+  m_targetResolution: 1080
+  m_allowOversizedScreenResolutions: 0
+  m_initialPointCloudMaxPoints: 0
 --- !u!1 &381024381
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +621,9 @@ Prefab:
       propertyPath: m_doSlowEmulation
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11476464, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
+    - {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1107002108
@@ -695,7 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac699e64cb67c4beda5ac8707c688a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enableSelectiveMeshing: 0
+  m_enableSelectiveMeshing: 1
 --- !u!4 &1656966253
 Transform:
   m_ObjectHideFlags: 0

@@ -29,10 +29,10 @@ using UnityEngine;
 public class PointToPointGUIController : MonoBehaviour, ITangoDepth
 {
     // Constant values for overlay.
-    public const float UI_LABEL_START_X = 15.0f;
-    public const float UI_LABEL_START_Y = 15.0f;
-    public const float UI_LABEL_SIZE_X = 1920.0f;
-    public const float UI_LABEL_SIZE_Y = 35.0f;
+	public float UI_LABEL_START_X = Screen.width/2;
+	public float UI_LABEL_START_Y = Screen.height - 25.0f;
+	public float UI_LABEL_SIZE_X = Screen.width/2;
+    public float UI_LABEL_SIZE_Y = 35.0f;
 
     /// <summary>
     /// The point cloud object in the scene.

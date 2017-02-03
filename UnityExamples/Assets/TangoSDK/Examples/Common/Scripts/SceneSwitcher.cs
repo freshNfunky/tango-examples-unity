@@ -47,7 +47,8 @@ public class SceneSwitcher : MonoBehaviour
 		"ExperimentalFloorFinding",
 		"ExperimentalMeshBuilderWithColor",
 		"ExperimentalMeshBuilderWithPhysics",
-		"ExperimentalMeshOcclusion"
+		"ExperimentalMeshOcclusion",
+		"KittyAR"
     };
 
     /// <summary>

@@ -425,7 +425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2034540, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: m_HDR
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2034540, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: far clip plane

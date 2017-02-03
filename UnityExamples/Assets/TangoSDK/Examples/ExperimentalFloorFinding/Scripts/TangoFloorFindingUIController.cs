@@ -124,7 +124,7 @@ public class TangoFloorFindingUIController : MonoBehaviour
 
         if (!m_findingFloor)
         {
-            if (GUI.Button(new Rect(Screen.width - 220, 20, 200, 80), "<size=30>Find Floor</size>"))
+            if (GUI.Button(new Rect(10, 60, 200, 80), "<size=30>Find Floor</size>"))
             {
                 if (m_pointCloud == null)
                 {

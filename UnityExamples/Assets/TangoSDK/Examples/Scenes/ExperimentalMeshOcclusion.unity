@@ -989,7 +989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11488288, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: m_enableOcclusion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11488288, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: m_Enabled
@@ -1014,6 +1014,14 @@ Prefab:
     - target: {fileID: 2034540, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034540, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
+      propertyPath: m_HDR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11469732, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
+      propertyPath: m_enableDebugUI
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
@@ -2159,7 +2167,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.05
-  far clip plane: 20
+  far clip plane: 200
   field of view: 37.8
   orthographic: 0
   orthographic size: 5
@@ -2171,7 +2179,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
+  m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -2235,8 +2243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6faac4c9c45314fb58ffce5a784ee707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enableDebugUI: 0
-  m_enableSelectiveMeshing: 0
+  m_enableDebugUI: 1
+  m_enableSelectiveMeshing: 1
 --- !u!4 &1383579640
 Transform:
   m_ObjectHideFlags: 0
@@ -3371,11 +3379,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_3drGenerateNormal
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_3drGenerateTexCoord
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_enableDepth
@@ -3383,7 +3391,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_3drGenerateColor
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_videoOverlayUseTextureIdMethod
@@ -3391,11 +3399,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_videoOverlayUseByteBufferMethod
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_3drResolutionMeters
-      value: .100000001
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_enableAreaDescriptions
@@ -3419,6 +3427,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_allowOutOfDateTangoAPI
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
+      propertyPath: m_3drMinNumVertices
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
+      propertyPath: m_showEmulationOptionsInInspector
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

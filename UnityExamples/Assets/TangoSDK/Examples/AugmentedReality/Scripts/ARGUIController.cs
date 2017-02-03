@@ -30,7 +30,7 @@ public class ARGUIController : MonoBehaviour, ITangoLifecycle, ITangoDepth
 {
     // Constant value for controlling the position and size of debug overlay.
     public const float UI_LABEL_START_X = 15.0f;
-    public const float UI_LABEL_START_Y = 15.0f;
+    public const float UI_LABEL_START_Y = 340.0f;
     public const float UI_LABEL_SIZE_X = 1920.0f;
     public const float UI_LABEL_SIZE_Y = 35.0f;
     public const float UI_LABEL_GAP_Y = 3.0f;
@@ -113,14 +113,16 @@ public class ARGUIController : MonoBehaviour, ITangoLifecycle, ITangoDepth
     /// <summary>
     /// If set, show debug text.
     /// </summary>
-    private bool m_showDebug = false;
+    private bool m_showDebug = true;
 
     /// <summary>
     /// Unity Start() callback, we set up some initial values here.
     /// </summary>
     public void Start()
     {
-        m_currentFPS = 0;
+		// UI_LABEL_START_Y = Screen.height - 40.0f;
+		// UI_LABEL_SIZE_X = Screen.width;
+		m_currentFPS = 0;
         m_framesSinceUpdate = 0;
         m_currentTime = 0.0f;
         m_fpsText = "FPS = Calculating";

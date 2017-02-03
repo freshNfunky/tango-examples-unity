@@ -39,7 +39,7 @@ public class TangoEnvironmentalLighting : MonoBehaviour, ITangoVideoOverlay, ITa
     /// <summary>
     /// Enable environmental lighting toggling.
     /// </summary>
-    public bool m_enableDebugUI = false;
+    public bool m_enableDebugUI = true;
 
     /// <summary>
     /// Defines if environmental lighting is enabled. Enabled by default.

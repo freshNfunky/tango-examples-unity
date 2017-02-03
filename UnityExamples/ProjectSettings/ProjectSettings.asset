@@ -139,7 +139,7 @@ PlayerSettings:
   CreateWallpaper: 0
   APKExpansionFiles: 0
   preloadShaders: 0
-  StripUnusedMeshComponents: 1
+  StripUnusedMeshComponents: 0
   VertexChannelCompressionMask:
     serializedVersion: 2
     m_Bits: 238
@@ -243,11 +243,11 @@ PlayerSettings:
       m_Height: 0
   m_BuildTargetBatching:
   - m_BuildTarget: Android
-    m_StaticBatching: 0
+    m_StaticBatching: 1
     m_DynamicBatching: 1
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: AndroidPlayer
-    m_APIs: 08000000
+    m_APIs: 0b000000
     m_Automatic: 1
   m_BuildTargetVRSettings:
   - m_BuildTarget: Android
@@ -425,7 +425,7 @@ PlayerSettings:
   platformArchitecture:
     iOS: 2
   scriptingBackend:
-    Android: 1
+    Android: 0
     Metro: 2
     Standalone: 0
     WP8: 2

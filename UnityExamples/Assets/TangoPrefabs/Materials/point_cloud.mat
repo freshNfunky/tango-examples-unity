@@ -24,7 +24,7 @@ Material:
     m_Floats:
     - first:
         name: point_size
-      second: 20
+      second: 10
     m_Colors:
     - first:
         name: _Color

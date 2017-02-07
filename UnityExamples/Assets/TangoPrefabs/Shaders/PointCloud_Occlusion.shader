@@ -22,7 +22,6 @@
                float size : PSIZE;
             };
 
-            float point_size;
            
             v2f vert (appdata v)
             {

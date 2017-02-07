@@ -178,7 +178,8 @@ public class MeshOcclusionUIController : MonoBehaviour, ITangoLifecycle, ITangoP
     public void Start()
     {
         m_meshSavePath = Application.persistentDataPath + "/meshes";
-        Directory.CreateDirectory(m_meshSavePath);
+		Debug.Log(m_meshSavePath);
+		Directory.CreateDirectory(m_meshSavePath);
 
         m_arPoseController = FindObjectOfType<TangoARPoseController>();
         m_tangoDynamicMesh = FindObjectOfType<TangoDynamicMesh>();

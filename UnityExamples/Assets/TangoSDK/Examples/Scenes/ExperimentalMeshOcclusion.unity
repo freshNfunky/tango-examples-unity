@@ -283,7 +283,7 @@ MonoBehaviour:
   m_listElement: {fileID: 166746, guid: 0d1edb6c253f5446ba1b26e5b6bf5651, type: 2}
   m_listContentParent: {fileID: 885732611}
   m_toggleGroup: {fileID: 885732610}
-  m_depthMaskMat: {fileID: 2100000, guid: b5a44d77fcbf843b0858cbdf5f1511c4, type: 2}
+  m_depthMaskMat: {fileID: 2100000, guid: c1e821f9facd14629bea464597a9bd6d, type: 2}
   m_visibleMat: {fileID: 2100000, guid: a0a81df3f0960457aad0a8d1338d9dc7, type: 2}
 --- !u!4 &221904627
 Transform:
@@ -3403,7 +3403,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_3drResolutionMeters
-      value: 0.1
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ff519ec4bed0442dc9bf3a21a9777c4d, type: 2}
       propertyPath: m_enableAreaDescriptions

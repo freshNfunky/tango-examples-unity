@@ -72,6 +72,16 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
     [HideInInspector]
     public Quaternion m_tangoRotation;
 
+	/// <summary>
+	/// Translation Offset for Camera Position in Unity to match Camera Image
+	/// </summary>
+	public Vector3 m_camOffsetXf;
+
+	/// <summary>
+	/// Translation Offset for Camera Position in Unity to match Camera Image
+	/// </summary>
+	public Quaternion m_camOffsetRot;
+
     /// <summary>
     /// If set, use the Move function of the CharacterController attached to the
     /// parent object to update the position.
@@ -122,6 +132,12 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
     /// to <c>SetPose</c>.
     /// </summary>
     private Matrix4x4 m_uwOffsetTuw;
+
+	/// <summary>
+	/// Matrix Offset for colorCam
+	/// </summary>
+	private Matrix4x4 m_colorCamOffs;
+
 
     /// <summary>
     /// Gets or sets a value indicating whether the clutch is active.
@@ -323,8 +339,16 @@ public class TangoDeltaPoseController : MonoBehaviour, ITangoPose
             Quaternion rotation;
             TangoSupport.TangoPoseToWorldTransform(pose, out position, out rotation);
 
+			m_colorCamOffs = Matrix4x4.TRS(m_camOffsetXf,m_camOffsetRot, Vector3.one);
+
+			Matrix4x4 cTuc = new Matrix4x4();
+			cTuc.SetColumn(0, new Vector4(1.0f, 0.0f, 0.0f, 0.0f));
+			cTuc.SetColumn(1, new Vector4(0.0f, -1.0f, 0.0f, 0.0f));
+			cTuc.SetColumn(2, new Vector4(0.0f, 0.0f, 1.0f, 0.0f));
+			cTuc.SetColumn(3, new Vector4(0.0f, 0.0f, 0.0f, 1.0f));
+
             m_uwTuc = Matrix4x4.TRS(position, rotation, Vector3.one);
-            Matrix4x4 uwOffsetTuc = m_uwOffsetTuw * m_uwTuc;
+			Matrix4x4 uwOffsetTuc =  m_uwOffsetTuw.inverse * m_uwTuc * m_colorCamOffs * m_colorCamOffs * cTuc;					//TangoSupport.m_colorCameraPoseRotation;
 
             m_tangoPosition = uwOffsetTuc.GetColumn(3);
             m_tangoRotation = Quaternion.LookRotation(uwOffsetTuc.GetColumn(2), uwOffsetTuc.GetColumn(1));

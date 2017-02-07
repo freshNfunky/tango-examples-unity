@@ -1,7 +1,5 @@
 ﻿Shader "Tango/PointCloud (Occlusion)" {
-Properties{
-        point_size("Point Size", Float) = 30.0
-}
+
     SubShader {
         Tags { "Queue" = "Background-1" }
         Pass {
@@ -30,7 +28,7 @@ Properties{
             {
                 v2f o;
                 o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
-                o.size = point_size;
+                o.size = 20;
                 return o;
             }
            
